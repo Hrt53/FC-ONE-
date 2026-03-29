@@ -253,11 +253,67 @@ body {
 
 /* Site Header */
 .site-header {
-  background: var(--bg-white);
-  padding: 12px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: relative;
-  z-index: 50;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.header-nav__btn {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--secondary);
+  text-decoration: none;
+  background: var(--bg-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.header-nav__btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 850px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header-nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    justify-content: flex-start;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .header-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .header-nav__btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
 }
 
 .header-logo {
@@ -266,6 +322,7 @@ body {
   gap: 12px;
   text-decoration: none;
   transition: opacity 0.3s ease;
+  flex-shrink: 0;
 }
 
 .header-logo:hover {

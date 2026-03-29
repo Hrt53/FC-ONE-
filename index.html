@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC ONE 新歓特設サイト | 関西1回生限定サッカーコミュニティ</title>
+    <title>FC ONE 新歓特設サイト</title>
     <meta name="description" content="関西の大学1回生限定のサッカーコミュニティ「FC ONE」。初心者大歓迎、ほとんどが1人参加！完全無料でサッカーとご飯を楽しめる新歓イベント開催中。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,17 @@
 <body>
     <!-- 0. SITE HEADER -->
     <nav class="site-header fade-in-up">
-        <div class="container">
+        <div class="container header-inner">
             <a href="#" class="header-logo">
                 <img src="assets/logo_emblem.jpg" alt="FC ONE LOGO" class="header-logo__img">
-                <span class="header-logo__text">FC ONE 新歓特設サイト</span>
+                <span class="header-logo__text">FC ONE</span>
             </a>
+            <div class="header-nav">
+                <a href="#events" class="header-nav__btn">新歓イベント</a>
+                <a href="#about" class="header-nav__btn">FC ONEの特徴</a>
+                <a href="#regular" class="header-nav__btn">定期活動</a>
+                <a href="#faq" class="header-nav__btn">Q&A</a>
+            </div>
         </div>
     </nav>
 
@@ -197,7 +203,7 @@
                 <div class="point-card">
                     <i class="ph-fill ph-graduation-cap point-icon"></i>
                     <h3>他大学交流あり</h3>
-                    <p>立命館OIC、関大、公立大など、関西中の学生と出会えます。</p>
+                    <p>立命館OIC、関大、公立大など、関西中の学生と出会えます。関西の他サッカーチームと共催の大会もあります！</p>
                 </div>
                 <div class="point-card">
                     <i class="ph-fill ph-users-three point-icon"></i>
@@ -239,10 +245,10 @@
     </section>
 
     <!-- 4.5. REGULAR ACTIVITIES -->
-    <section class="section regular-activities mb-5">
-        <div class="container">
+    <section class="section regular-activities mb-5" id="regular">
+        <div class="container text-center">
             <h2 class="section__title">定期活動</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center; margin-bottom: 40px; text-align: left;">
                 <div style="flex: 1 1 300px;">
                     <ul class="info-list" style="margin-bottom: 0;">
                         <li>
@@ -269,13 +275,7 @@
                     <img src="assets/osakajo.png" alt="大阪城公園 太陽の広場" style="width: 100%; max-width: 450px; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 5. ATMOSPHERE -->
-    <section class="section atmosphere">
-        <div class="container text-center">
-            <h2 class="section__title">FC ONEの雰囲気</h2>
             <div class="atmosphere__tags mb-4">
                 <span class="tag">#ほとんどが1人参加</span>
                 <span class="tag">#初心者歓迎</span>
@@ -283,10 +283,10 @@
             </div>
             <div class="atmosphere__gallery">
                 <div class="gallery-item">
-                    <img src="assets/huniki1.JPG" alt="雰囲気1" class="gallery-img">
+                    <img src="assets/huniki1.JPG" alt="定期活動の様子1" class="gallery-img">
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/huniki2.JPG" alt="雰囲気2" class="gallery-img">
+                    <img src="assets/huniki2.JPG" alt="定期活動の様子2" class="gallery-img">
                 </div>
             </div>
         </div>
@@ -367,7 +367,7 @@
     </section>
 
     <!-- 8. FAQ -->
-    <section class="section faq bg-light">
+    <section class="section faq bg-light" id="faq">
         <div class="container container--narrow">
             <h2 class="section__title">よくある質問</h2>
             <div class="faq-list">
