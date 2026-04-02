@@ -1156,11 +1156,11 @@ body {
   margin: 0 auto 40px;
   text-align: center;
   background: #fff;
-  padding: 32px 20px;
+  padding: 40px 24px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  border: 3px solid #fdf2f8;
-  max-width: 600px;
+  border: 4px solid #fdf2f8;
+  max-width: 100%;
 }
 
 .how-to-participate h3 {
