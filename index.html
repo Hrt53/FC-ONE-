@@ -269,7 +269,7 @@
     <section class="section regular-activities mb-5" id="regular">
         <div class="container text-center">
             <h2 class="section__title">定期活動</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; justify-content: center; margin-bottom: 40px; text-align: left;">
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center; margin-bottom: 30px; text-align: left;">
                 <div style="flex: 1 1 350px; min-width: 300px;">
                     <ul class="info-list" style="margin-bottom: 0;">
                         <li>
@@ -303,10 +303,25 @@
                         </li>
                     </ul>
                 </div>
-                <div style="flex: 1 1 350px; max-width: 450px; display: flex; flex-direction: column; gap: 1.5rem; text-align: center;">
+                <div style="flex: 1 1 350px; max-width: 450px; text-align: center;">
                     <img src="assets/osakajo.png" alt="大阪城公園 太陽の広場" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
-                    <img src="assets/Gemini_Generated_Image_1f8tm61f8tm61f8t.png" alt="集合場所マップ" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 15px; color: #334155; font-weight: bold;"><i class="ph-bold ph-map-trifold"></i> 集合場所・アクセス</h3>
+                <div style="display: inline-block; cursor: pointer; position: relative;" onclick="document.getElementById('mapModal').style.display='flex'">
+                    <img src="assets/Gemini_Generated_Image_1f8tm61f8tm61f8t.png" alt="集合場所マップ" style="width: 100%; max-width: 800px; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="position: absolute; bottom: 15px; right: 15px; background: rgba(0,0,0,0.7); color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; pointer-events: none; display: flex; align-items: center; gap: 4px;">
+                        <i class="ph-bold ph-magnifying-glass-plus"></i> タップして拡大
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Modal -->
+            <div id="mapModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; cursor: pointer; flex-direction: column;" onclick="this.style.display='none'">
+                <p style="color: #fff; margin-bottom: 15px; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; gap: 6px;"><i class="ph-bold ph-x"></i> 閉じる</p>
+                <img src="assets/Gemini_Generated_Image_1f8tm61f8tm61f8t.png" alt="拡大マップ" style="max-width: 95%; max-height: 85%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
             </div>
 
 
